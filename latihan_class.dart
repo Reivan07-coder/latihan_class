@@ -1,16 +1,27 @@
 void main (){
-var komputer1 = Komputer();
-komputer1.merek = 'Asus';
-komputer1.ram = 16;
-komputer1.storage = 1000;
-komputer1.cpu = 'I7 12700H';
-komputer1.cetak();
-var komp2 = Komputer();
-komp2.merek = 'Lenovo';
-komp2.cpu = 'I3 GEN 12';
-komp2.storage = 512;
-komp2.ram = 8;
-komp2.cetak();
+// var komputer1 = Komputer();
+// komputer1.merek = 'Asus';
+// komputer1.ram = 16;
+// komputer1.storage = 1000;
+// komputer1.cpu = 'I7 12700H';
+// komputer1.cetak();
+
+
+// var komp2 = Komputer();
+// komp2.merek = 'Lenovo';
+// komp2.cpu = 'I3 GEN 12';
+// komp2.storage = 512;
+// komp2.ram = 8;
+// komp2.cetak();
+
+var mhs1 = Mahasiswa();
+mhs1.nama = 'Reivan Anthony';
+mhs1.npm = 25413138;
+mhs1.semester = 3;
+mhs1.prodi = 'Sistem Informasi';
+mhs1.alamat = 'Sungai Raya Dalam';
+
+mhs1.cetakmhs();
   //batas coding
 }
 
@@ -25,5 +36,22 @@ class Komputer {
     print ('komputer ini ram sebesar $ram GB');
     print ('komputer ini penyimpanan sebesar $storage GB');
     print ('komputer ini punya cpu  $cpu');
+  }
+}
+
+class Mahasiswa {
+  String? nama;
+  int? npm;
+  int? semester;
+  String? prodi;
+  String? alamat;
+
+  cetakmhs(){
+    print ('Nama mahasiswa adalah $nama');
+    print ('NPM $nama adalah $npm');
+    print ('$nama adalah mahasiswa semester $semester');
+    print ('$nama adalah mahasiswa prodi $prodi');
+    print ('Alamat $nama berada di $alamat');
+
   }
 }
