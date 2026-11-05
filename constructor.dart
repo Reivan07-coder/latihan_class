@@ -1,5 +1,5 @@
 void main(){
-  var baju1 = Pakaian('Biru', 'Celana');
+  var baju1 = Pakaian(jenisinput: 'celana', warnainput: 'Biru');
 baju1.cetak();
   //batas
 }
@@ -9,11 +9,23 @@ String? warna;
 String? jenis;
 
 //1. positional indirect argument
-Pakaian(warnainput, jenisinput){
-  this.warna = warnainput;
-  this.jenis = jenisinput;
+// Pakaian(warnainput, jenisinput){
+//   this.warna = warnainput;
+//   this.jenis = jenisinput;
 
-}
+// }
+
+// 2. positional direct argument
+// Pakaian(this.warna, this.jenis);
+
+// 3. named indirect argument
+// Pakaian({warnainput, jenisinput}){
+//   this.warna = warnainput;
+//   this.jenis = jenisinput;
+
+//4. named direct argument
+Pakaian({this.jenis,this.warna});
+
 
 cetak(){
   print('Pakaian ini adalah $jenis');
