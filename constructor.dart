@@ -1,5 +1,5 @@
 void main(){
-  var baju1 = Pakaian(jenisinput: 'celana', warnainput: 'Biru');
+  var baju1 = Pakaian(jenis: 'celana', warna: 'biru');
 baju1.cetak();
   //batas
 }
